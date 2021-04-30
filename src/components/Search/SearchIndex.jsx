@@ -8,18 +8,20 @@ import './Search.css';
 function SearchIndex() {
     const url = 'https://www.superheroapi.com/api.php/4138052379586041';
 
+    // States for get data api
     const [search, setSearch] = useState('');
 
     const [dataHero, setDataHero] = useState([]);
 
 
-    async function searchSuperHeroes() {
+    const searchSuperHeroes = async () => {
         const res = await fetch(`${url}/search/${search}`).then(res => res.json());
 
         setDataHero(res.results);
     }
 
-    function handleChange(e) {
+    // Validations for return 0 heros or more
+    const handleChange = (e) => {
         const searchTerm = e.target.value;
 
         setSearch(searchTerm);

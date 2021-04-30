@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function SearchBar(props) {
-    const { handleChange, search } = props;
+// search input
+
+function SearchBar({ handleChange, search }) {
 
     return (
         <div className="Search">

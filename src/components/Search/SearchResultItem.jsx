@@ -1,9 +1,9 @@
 import React from 'react';
 
-function SearchResultItem(props) {
-    const { data } = props;
+// search structure
 
-    console.log('data', data);
+function SearchResultItem({ data }) {
+
     return (
         <>
             <div>
@@ -11,12 +11,8 @@ function SearchResultItem(props) {
             </div>
             <div className="right">
                 <h1>{data.name}</h1>
-                <span style={{ color: 'gray', marginBottom: 5 }}>{data.biography['full-name']}</span>
-                <div className="stats">
-                    <div>strength: {data.powerstats.strength}</div>
-                    <div>speed: {data.powerstats.speed}</div>
-                    <div>power: {data.powerstats.power}</div>
-                </div>
+                <button>Add to the team</button>
+
             </div>
         </>
     );

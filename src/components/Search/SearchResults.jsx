@@ -1,10 +1,10 @@
 import React from 'react';
 import SearchResultItem from './SearchResultItem';
 
-function SearchResults(props) {
-    const { dataHero = [] } = props;
+// view of hero
 
-    console.log('dataHero', dataHero);
+function SearchResults({ dataHero = [] }) {
+
     return (
         <div>
             {dataHero.map(hero =>
