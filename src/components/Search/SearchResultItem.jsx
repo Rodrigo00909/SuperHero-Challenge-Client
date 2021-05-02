@@ -23,7 +23,7 @@ function SearchResultItem({ data }) {
                     <img className="Search-Img" src={data.image.url} alt="super pic" />
                 </div>
                 <div className="Search-Div-Button">
-                    <button className="Search-Button">Add to the team</button>
+                    {/* <button className="Search-Button">Add to the team</button> */}
                     <Link to={`/character/${data.id}`}>
                         <button className="Search-Button">See Details</button>
                     </Link>

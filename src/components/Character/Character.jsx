@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Menu from '../layout/Menu';
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import { URL_API } from '../../Api/api';
+
+import './Character.css'
 
 const Character = () => {
 
@@ -26,27 +29,27 @@ const Character = () => {
     return (
         <>
             <Menu />
-            <div className="Container">
-                <div className="character-div">
-                    <div className="character-div-img">
-                        <img src={character.image?.url} alt="" />
-                    </div>
-                    <div className="character-div-section">
-                        <div className="character-div-title">
-                            <h3>{character.name}</h3>
-                        </div>  
-                        <div>
-                            <p>{character.id}</p>
-                            <p>Work: {character.work?.occupation}</p>
-                            <p>Peso: {character.appearance?.weight}</p>
-                            <p>Color de ojos: {character.appearance?.['eye-color']}</p>
-                            <p>Color de pelo: {character.appearance?.['hair-color']}</p>
-                        </div>
-                    </div>
-
+            <div className="character-div">
+                <div className="character-div-img">
+                    <img className="character-img" src={character.image?.url} alt="" />
                 </div>
-            </div>
+                <div className="character-div-section">
+                    <div className="character-div-title">
+                        <h2 className="character-title">{character.name}</h2>
+                        <p className="character-text"><span>Full Name:</span> {character.biography?.['full-name']}</p>
+                        <p className="character-text"><span>Also know as:</span> {character.biography?.aliases[0]}</p>
+                        <p className="character-text"><span>Height and Weight:</span> {character.appearance?.height[1]} - {character.appearance?.weight[1]}</p>
+                        <p className="character-text"><span>Eye color:</span> {character.appearance?.['eye-color']}</p>
+                        <p className="character-text"><span>Hair color:</span> {character.appearance?.['hair-color']}</p>
+                        <p className="character-text"><span>Work:</span> {character.work?.occupation}</p>
+                        <p className="character-text"><span>First Appearance was in</span> {character.biography?.['first-appearance']} <span>and Published for</span> {character.biography?.publisher}</p>
+                    </div>
+                    <Link to='/search'>
+                        <button className="character-button">Back to Search</button>
+                    </Link>
+                </div>
 
+            </div>
         </>
     )
 }

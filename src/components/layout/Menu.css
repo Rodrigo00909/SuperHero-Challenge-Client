@@ -1,0 +1,33 @@
+.app-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2f3848;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nombre-usuario {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.nombre-usuario span {
+  font-weight: 900;
+}
+
+.nav-principal a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-principal a:first-of-type {
+  margin-right: 2rem;
+}
+/*# sourceMappingURL=Menu.css.map */

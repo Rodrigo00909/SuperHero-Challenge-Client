@@ -1,0 +1,62 @@
+.character-div {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.character-div .character-img {
+  width: 100%;
+}
+
+.character-title {
+  text-align: start;
+  font-size: 4rem;
+}
+
+.character-text {
+  max-width: 35em;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+  color: #35353599;
+}
+
+.character-text span {
+  font-weight: bold;
+  color: #585858;
+}
+
+.character-button {
+  background-color: #454bb9;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.character-button:hover {
+  color: #1a1a1a;
+  background-color: #e6e6e6;
+}
+
+@media screen and (min-width: 992px) {
+  .character-div {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+}
+/*# sourceMappingURL=Character.css.map */

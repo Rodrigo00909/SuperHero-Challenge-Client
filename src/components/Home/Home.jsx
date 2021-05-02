@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Menu from '../layout/Menu';
-
+import { URL_API } from '../../Api/api';
 
 
 const Home = () => {
 
-    const url = 'https://www.superheroapi.com/api.php/4138052379586041/69/biography'
+    const url = `${URL_API}`
 
     const [equipo, setEquipo] = useState([]);
 

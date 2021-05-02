@@ -5,7 +5,6 @@ import SearchResults from './SearchResults';
 import { URL_API } from '../../Api/api';
 
 
-
 import './Search.css';
 
 function SearchIndex() {

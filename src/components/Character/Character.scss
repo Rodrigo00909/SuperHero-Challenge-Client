@@ -1,0 +1,56 @@
+.character-div {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    grid-gap: 2rem; 
+    align-items: center;
+    gap: 2rem;
+
+    .character-img {
+        width: 100%;
+    }
+}
+
+.character-title {
+    text-align: start;
+    font-size: 4rem;
+}
+
+.character-text {
+    max-width: 35em;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    color: #35353599;
+
+    span {
+        font-weight: bold;
+        color: #585858
+    }
+}
+
+.character-button {
+    background-color: #454bb9;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: ease 1s;
+
+    &:hover {
+        color: rgb(26, 26, 26);
+        background-color: rgb(230, 230, 230);
+    }
+}
+
+@media screen and (min-width: 992px)  {
+    .character-div{
+        grid-template-columns: 1fr 2fr;
+    }
+}
