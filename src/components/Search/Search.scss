@@ -3,24 +3,89 @@
     margin: 20px 0 20px 0;
     margin: 0 auto;
     margin-top: 30px;
-}
 
-.SearchInput {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    width: 300px;
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 45px;
-    transition: 0.4s ease;
+    .SearchInput {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
+        border-radius: 0;
+        outline: none;
+        height: 3rem;
+        width: 300px;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 45px;
+        transition: 0.4s ease;
 
-    &:focus {
-        border-bottom: 1px solid #4d57e4;
-        width: 400px;
+        &:focus {
+            border-bottom: 1px solid #4d57e4;
+            width: 400px;
+        }
+
     }
-
 }
+
+.Search-Hero {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Search-Div {
+    background-color: #2f3848;
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+
+    .Search-Hero-Title {
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+
+        h3 {
+            font-size: 3rem;
+            color: white;
+            align-items: center;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+.Search-Div-Img {
+    
+    .Search-Img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.Search-Div-Button {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin: 10px 0 15px 0;
+
+    .Search-Button {
+        background-color: #454bb9;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition: ease 1s;
+
+        &:hover {
+            color: rgb(26, 26, 26);
+            background-color: rgb(230, 230, 230);
+        }
+    }
+}
+

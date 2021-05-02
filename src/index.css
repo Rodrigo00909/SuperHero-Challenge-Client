@@ -52,6 +52,11 @@ a {
   color: var(--gris2);
 }
 
+.Container {
+  margin: 0 auto;
+  max-width: 1550px;
+}
+
 /** BOTONES **/
 .btn {
   margin-top: 2rem;
@@ -138,6 +143,7 @@ aside {
   justify-content: space-between;
   background-color: var(--gris2);
   padding: 4rem;
+  align-items: center;
 }
 .nombre-usuario {
   color: var(--blanco);

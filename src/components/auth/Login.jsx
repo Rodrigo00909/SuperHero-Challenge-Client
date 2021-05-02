@@ -43,7 +43,9 @@ const Login = () => {
                         </div>
 
                         <div className="campo-form">
-                            <input type="submit" className="btn btn-primario btn-block" value="Login" />
+                            <Link className="btn-block" to={'/home'}>
+                                <input type="submit" className="btn btn-primario btn-block" value="Login" />
+                            </Link>
                         </div>
                     </form>
 

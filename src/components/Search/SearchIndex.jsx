@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import Menu from '../layout/Menu';
 import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
+import { URL_API } from '../../Api/api';
+
+
 
 import './Search.css';
 
 function SearchIndex() {
-    const url = 'https://www.superheroapi.com/api.php/4138052379586041';
 
     // States for get data api
     const [search, setSearch] = useState('');
@@ -15,7 +17,8 @@ function SearchIndex() {
 
 
     const searchSuperHeroes = async () => {
-        const res = await fetch(`${url}/search/${search}`).then(res => res.json());
+        const res = await fetch(`${URL_API}/search/${search}`).then(res => res.json());
+        // const res = await api.get(`${URL_API}/search/${search}`);
 
         setDataHero(res.results);
     }
@@ -36,7 +39,7 @@ function SearchIndex() {
     return (
         <>
             <Menu />
-            <div className="main">
+            <div className="Container">
                 <SearchBar search={search} handleChange={handleChange} />
                 <SearchResults dataHero={dataHero} />
             </div>

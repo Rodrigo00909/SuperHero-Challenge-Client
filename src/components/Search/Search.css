@@ -5,7 +5,7 @@
   margin-top: 30px;
 }
 
-.SearchInput {
+.Search .SearchInput {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -20,8 +20,93 @@
   transition: 0.4s ease;
 }
 
-.SearchInput:focus {
+.Search .SearchInput:focus {
   border-bottom: 1px solid #4d57e4;
   width: 400px;
+}
+
+.Search-Hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Search-Div {
+  background-color: #2f3848;
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.Search-Div .Search-Hero-Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Search-Div .Search-Hero-Title h3 {
+  font-size: 3rem;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.Search-Div-Img .Search-Img {
+  width: 100%;
+  height: 400px;
+}
+
+.Search-Div-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+  margin: 10px 0 15px 0;
+}
+
+.Search-Div-Button .Search-Button {
+  background-color: #454bb9;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.Search-Div-Button .Search-Button:hover {
+  color: #1a1a1a;
+  background-color: #e6e6e6;
 }
 /*# sourceMappingURL=Search.css.map */
