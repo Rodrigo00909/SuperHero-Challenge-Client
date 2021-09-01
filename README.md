@@ -8,6 +8,8 @@ En este repositorio se encuentra mi aplicación de Héroes y Villanos.
 Es una aplicación, la cual consume una Api de Superheroes realizado con React utilizando React Hooks, React Router & Links. Posee un buscador de héroes, cada uno con su información consumida de la Api. El diseño es moderno, el cual primero se realizó en figma (prototipo).
 </h4>
 
+Link: https://torresmessenzani-superheroapi.netlify.app/
+
 ### Algunas fotos del proyecto
 
 <img align="center" justify="center" src="https://i.postimg.cc/R0yh3bNx/12.png" />
