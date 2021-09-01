@@ -10,6 +10,8 @@ Es una aplicación, la cual consume una Api de Superheroes realizado con React u
 
 Link: https://torresmessenzani-superheroapi.netlify.app/
 
+## Cabe resaltar que el proyecto es totalmente responsive, las imágenes están cortadas en el editor que usé. Se puede verificar en el link del proyecto.
+
 ### Algunas fotos del proyecto
 
 <img align="center" justify="center" src="https://i.postimg.cc/R0yh3bNx/12.png" />
